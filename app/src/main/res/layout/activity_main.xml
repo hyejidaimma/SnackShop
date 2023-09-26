@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonCart3"
+        android:layout_width="51dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="24dp"
+        android:text="담기"
+        app:layout_constraintBottom_toBottomOf="@+id/editText3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewMenu3"
+        app:layout_constraintVertical_bias="0.246" />
+
+    <Button
+        android:id="@+id/buttonCart1"
+        android:layout_width="51dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="24dp"
+        android:text="담기"
+        app:layout_constraintBottom_toBottomOf="@+id/editText1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewMenu1"
+        app:layout_constraintVertical_bias="0.394" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="126dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="주문 수량 :"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/textViewPrice3"
+        app:layout_constraintStart_toStartOf="@+id/textViewPrice3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPrice3" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="126dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="주문 수량 :"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/textViewPrice2"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toStartOf="@+id/textViewPrice2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPrice2" />
+
+    <ImageView
+        android:id="@+id/imageViewRamen"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ramen" />
+
+    <TextView
+        android:id="@+id/textViewMenu3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="18dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewKal"
+        app:layout_constraintTop_toTopOf="@+id/imageViewKal" />
+
+    <TextView
+        android:id="@+id/textViewPrice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewMenu2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewMenu2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMenu2" />
+
+    <TextView
+        android:id="@+id/textViewPrice3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewMenu3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewMenu3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMenu3" />
+
+    <ImageView
+        android:id="@+id/imageViewKal"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/imageViewTtuk"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewTtuk"
+        app:srcCompat="@drawable/kal" />
+
+    <TextView
+        android:id="@+id/textViewPrice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewMenu1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewMenu1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMenu1" />
+
+    <TextView
+        android:id="@+id/textViewMenu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="18dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewRamen"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewMenu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="18dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewTtuk"
+        app:layout_constraintTop_toTopOf="@+id/imageViewTtuk" />
+
+    <ImageView
+        android:id="@+id/imageViewTtuk"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewRamen"
+        app:srcCompat="@drawable/ttuk" />
+
+    <Button
+        android:id="@+id/buttonGoCart"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="장바구니 이동"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewKal" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="126dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="주문 수량 :"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/textViewPrice1"
+        app:layout_constraintStart_toStartOf="@+id/textViewPrice1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPrice1" />
+
+    <Button
+        android:id="@+id/buttonCart2"
+        android:layout_width="51dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="24dp"
+        android:text="담기"
+        app:layout_constraintBottom_toBottomOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewMenu2"
+        app:layout_constraintVertical_bias="0.394" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
